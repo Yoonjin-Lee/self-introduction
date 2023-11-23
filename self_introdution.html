@@ -5,8 +5,118 @@
     <title>자기소개 과제</title>
     <style>
         /* 여기에 css 코드를 쓰자! */
+        * {padding: 0; margin: 0;}
+        header {
+            background-color: rgb(95, 189, 195);
+            height: 130px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 42px;
+        }
+        aside {
+            float: left;
+            background-color: rgb(240, 188, 188);
+            font-size: medium;
+            height: inherit;
+            width: 15%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 20px;
+        }
+        aside p {
+            position: relative;
+            bottom: 25px;
+            padding-bottom: 25px;
+        }
+        main {
+            background-color: rgb(255, 255, 232);
+            height: inherit;
+        }
+        section {
+            position: absolute;
+            top: 125px;
+            left: 19.5%;
+            width: 80%;
+            height: inherit;
+            padding-top: 34px;
+            padding-bottom: 34px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        article {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 15px;
+            margin: 14px 0px;
+            width: 92%;
+            font-size: medium;
+            border: 1px solid black;
+            border-radius: 8px;
+            text-align: left;
+            height: 100px;
+        }
+        article[id="project"]{
+            height: 129px;
+        }
+        ul {
+            padding-left: 14px;
+        }
+        html, body{
+            height: 100%;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <h1>세상을 움직이는 이윤진입니다!</h1>
+    </header>
+    <main>
+        <aside>
+            <div>
+                <p>
+                    연락처<br>
+                    010-0000-0000
+                </p>
+                <p>
+                    이메일<br>
+                    peacemiller@naver.com
+                </p>
+                <p>
+                    Github<br>
+                    Yoonjin-Lee
+                </p>
+            </div>
+        </aside>
+        <section>
+            <article>
+                <p>
+                    학력<br><br>건국대학교 스마트ict융합공학과 4학년 - 2024년 2월 졸업예정
+                </p>
+            </article>
+            <article id="project">
+                <div>
+                    프로젝트<br><br>
+                <ul>
+                    <li>O!TAKU - 이벤트 보조 개최 안드로이드 어플리케이션</li>
+                    <li>미주정복 - 주식 배당 계산 안드로이드 어플리케이션</li>
+                    <li>거꾸로 가계부 - 작성 후 소비하는 가계부 어플리케이션</li>
+                </ul>
+                </div>
+            </article>
+            <article>
+                <p>
+                    개발 분야<br><br>안드로이드(Jetpack Compose 가능), 프론트엔드(html, css), 플러터
+                </p>
+            </article>
+            <article>
+                <p>
+                    사용 가능 언어<br><br>한국어, 영어, 일본어
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
