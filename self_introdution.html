@@ -14,12 +14,16 @@
             align-items: center;
             padding-left: 42px;
         }
+        main {
+            display: flex;
+            height: inherit;
+            width: 100%;
+        }
         aside {
-            float: left;
             background-color: rgb(240, 188, 188);
             font-size: medium;
             height: inherit;
-            width: 15%;
+            width: 20%;
             display: flex;
             justify-content: left;
             align-items: center;
@@ -30,15 +34,9 @@
             bottom: 25px;
             padding-bottom: 25px;
         }
-        main {
-            background-color: rgb(255, 255, 232);
-            height: inherit;
-        }
         section {
-            position: absolute;
-            top: 125px;
-            left: 19.5%;
             width: 80%;
+            background-color: rgb(255, 255, 232);
             height: inherit;
             padding-top: 34px;
             padding-bottom: 34px;
@@ -51,22 +49,18 @@
             align-items: center;
             padding-left: 15px;
             margin: 14px 0px;
-            width: 92%;
             font-size: medium;
             border: 1px solid black;
             border-radius: 8px;
             text-align: left;
-            height: 100px;
-        }
-        article[id="project"]{
-            height: 129px;
+            min-height: 100px;
         }
         ul {
             padding-left: 14px;
         }
         html, body{
             height: 100%;
-            overflow: hidden;
+            overflow-y: hidden;
         }
     </style>
 </head>
